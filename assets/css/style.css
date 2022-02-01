@@ -1,0 +1,326 @@
+/* Header style */
+
+.subnav-hero-section {
+
+  background: lightgray;
+  background-size: cover;
+  position: relative;
+  overflow: visible;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+          flex-direction: column;        
+  height: 175px;
+}
+
+.subnav-hero-section .subnav-hero-headline {
+  color: olivedrab;
+}
+
+.subnav-hero-subnav {
+  float: none;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 0;
+  overflow:hidden;
+  width: 100%;
+}
+
+.logo {
+  height: 30%;
+  margin-top: 5px;
+}
+
+
+.subnav-hero-subnav li {
+  float: none;
+  display: inline-block;
+}
+
+.subnav-hero-subnav li a {
+  padding: 0.9rem 1rem;
+  font-size: 0.75rem;
+  color: black;
+  text-transform: uppercase;
+  display: block;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.35s ease-in-out;
+}
+
+.subnav-hero-subnav li a.is-active {
+  background: rgba(254, 254, 254, 0.15);
+}
+
+.subnav-hero-subnav li a:hover {
+  background: gray;
+}
+
+/* Search Section */ 
+
+.instructions {
+    margin-top: 60px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.input-group-rounded .input-group-field {
+  border-radius: 5000px 0 0 5000px;
+  padding-left: 1rem;
+  margin-top: 30px;
+  text-align:center;
+}
+
+.input-group-rounded .input-group-button .button {
+  border-radius: 0 5000px 5000px 0;
+  font-size: 0.8rem;
+  margin-top: 30px;
+}
+
+.search {
+    width: 400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.flex {
+  display: flex;
+  flex-shrink: 2;
+  width:400px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.list {
+    list-style:none;
+    text-align:center;
+    line-height:2em;
+}
+
+.close {
+    cursor: pointer;
+    margin-left:5%;
+    color:#C0C0C0;
+    transition: all .2s ease-in-out; 
+
+}
+
+.close:hover {
+    color:#7B7474;
+    transform: scale(1.3); 
+}
+
+.button {
+    font-weight:bold;
+}
+
+.button.secondary {
+  background-color: black;
+
+}
+
+.switch-group {
+  display: flex;
+  justify-content: center;
+  padding-top:20px;
+  padding-bottom:20px;
+}
+
+.switch-label {
+  width: 100px;
+  text-align: center;
+  font-size:13px;
+}
+
+.switch-paddle {
+  border-radius: 5000px;
+}
+
+.switch-paddle::after {
+  border-radius: 5000px;
+}
+
+/* Cards Section */
+
+h4 {
+  justify-self: flex-start;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card {
+  margin: 0 20px 20px;
+  max-width: 300px;
+}
+
+.card-section:hover a h4 {
+  color: olive;
+}
+
+.card-section a {
+  color: #111;
+}
+
+.card-section {
+  padding: 1em;
+}
+
+.card-section > img {
+  max-width: none;
+}
+
+.description {
+  display: flex;
+  margin-top: 1em;
+}
+
+/* Ingredients Card */ 
+
+.ingredient-card {
+    width: 700px;
+    height: 400px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding-top:0;
+    border-radius:10px;
+    text-align:center;
+    background-color: lightgrey;
+}
+
+.class-head {
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:bold;
+    color:	#2F4F4F;
+}
+
+/* Special button styling */ 
+
+.special {
+    border-radius: 10px;
+    background-color:#AF6767;
+    height:70px;
+    width:80px;
+    padding-bottom:5px;
+    padding-top:7px;
+    margin:10px;
+    transition: all .2s ease-in-out; 
+
+}
+
+.special:hover {
+  background-color:#cc9c9c;
+  transform: scale(1.1); 
+}
+
+.special-div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align:center;
+}
+
+.fas {
+    width:20px;
+    height:20px;
+}
+
+/* Styling to get the header on the results table to follow down th page as the user scrolls */
+
+.myfixed {
+  position: sticky;
+  top: 0;
+  background-color:white;
+  color: #fefefe;
+  display: inline-block;
+  text-align: center;
+}
+
+.results {
+  align-content: center;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 0px;
+  padding-top:0;
+  border-radius:0px;
+  text-align:center;
+}
+
+#recipe-results {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Styling if search results is null*/
+
+.results-head {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+/* Recipes Results section*/
+
+.fa-heart {
+  transition: all 0.1s;
+}
+
+.fa-heart:hover {
+  color:lightpink;
+}
+
+.fa-heart.saved-recipe {
+  color: red;
+  font-size: 20px;
+}
+
+.save {
+  margin-top: 65%;
+}
+
+.saved {
+
+  background-color: lightgreen;
+  color: #fefefe;
+  text-align: center;
+}
+
+.clear-button {
+  background-color: gray;
+  
+}
+
+.clear-button:hover {
+  background-color:black;
+  
+}
+
+thead {
+  background-color: white;
+}
+
+  /* recipe results section ends */
+
+  /* Footer section */
+footer {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+  }
+
+.social li {
+    list-style-type: none;
+}
+  /* Footer section ends */
+
+  
